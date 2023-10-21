@@ -1,0 +1,42 @@
+{
+    "name": "Rathnasabapathy A R",
+    "objective": "Dedicated and results-driven professional with 2 years of experience in Java and the Spring framework. Seeking opportunities to leverage expertise in Java development, Spring Boot, and Java 17 to contribute effectively to innovative projects.",
+    "professionalSummary": {
+        "technicalSkills": [
+            "Core Java (Java 17) & Spring IOC (Core Skills)",
+            "Spring Boot",
+            "JDBC, JPA, Hibernate, Spring JDBC, Spring DATA (Persistence)",
+            "Spring MVC (MVC) & Spring REST (Restful Web Services)",
+            "Maven, GIT, Jenkins (Java DevOps)",
+            "Database: Oracle SQL",
+            "Test Automation: JUnit & Mockito",
+            "Development Tools: Eclipse, IntelliJ, STS, SQL Developer, MySQL Workbench",
+            "API Testing Tool: Postman"
+        ],
+        "softSkills": [
+            "Good Organizational Skills",
+            "Strong Team Player",
+            "Effective Cooperation with Teammates",
+            "Strong Leadership Skills",
+            "Excellent Communication, Collaboration, and Team Building Skills"
+        ]
+    },
+    "workHistory": [
+        {
+            "position": "Assistant Systems Engineer",
+            "company": "XYZ Company, Chennai",
+            "startDate": "5 May 2022",
+            "endDate": "Present"
+        }
+    ],
+    "education": {
+        "degree": "Bachelor of Engineering in Civil Engineering",
+        "school": "Alagappa Chettiar Government College of Engineering and Technology",
+        "cgpa": 7.38
+    },
+    "certifications": [
+        {
+            "title": "Google Cloud - Associate Cloud Engineer Certificate"
+        }
+    ]
+}

@@ -1,0 +1,167 @@
+1) MOVIE CLASS
+
+  class Movie {
+
+    constructor(title, studio, rating = "PG") {
+        this.title = title;
+        this.studio = studio;
+        this.rating = rating;
+    }
+
+
+    static getPG(movies) {
+        return movies.filter(movie => movie.rating === "PG");
+    }
+}
+
+
+const casinoRoyale = new Movie("Casino Royale", "Eon Productions", "PG-13");
+
+
+const moviesArray = [
+    new Movie("Movie1", "Studio1", "PG"),
+    new Movie("Movie2", "Studio2", "PG-13"),
+    new Movie("Movie3", "Studio3", "PG"),
+    new Movie("Movie4", "Studio4", "R"),
+    new Movie("Movie5", "Studio5", "PG-13")
+];
+
+const pgMovies = Movie.getPG(moviesArray);
+console.log(pgMovies);
+______________________________________________________________________________________________________________________________________
+2) CIRCLE CLASS
+
+  class Circle {
+ 
+    private radius: number;
+    private colour: string;
+
+   
+    constructor(radius: number, colour: string = 'red') {
+        this.radius = radius;
+        this.colour = colour;
+    }
+
+ 
+    getRadius(): number {
+        return this.radius;
+    }
+
+ 
+    setRadius(radius: number): void {
+        this.radius = radius;
+    }
+
+    
+    getColour(): string {
+        return this.colour;
+    }
+
+   
+    setColour(colour: string): void {
+        this.colour = colour;
+    }
+
+   
+    calculateArea(): number {
+        return Math.PI * Math.pow(this.radius, 2);
+    }
+
+    // Method to calculate the circumference of the circle
+    calculateCircumference(): number {
+        return 2 * Math.PI * this.radius;
+    }
+}
+
+
+const myCircle = new Circle(5);
+console.log("Radius:", myCircle.getRadius());
+console.log("Colour:", myCircle.getColour());
+console.log("Area:", myCircle.calculateArea());
+console.log("Circumference:", myCircle.calculateCircumference());
+
+myCircle.setColour('blue');
+myCircle.setRadius(7);
+console.log("Updated Radius:", myCircle.getRadius());
+console.log("Updated Colour:", myCircle.getColour());
+console.log("Updated Area:", myCircle.calculateArea());
+console.log("Updated Circumference:", myCircle.calculateCircumference());
+__________________________________________________________________________________________________________________________________________
+  3) PERSON CLASS
+
+  class Person {
+    private name: string;
+    private age: number;
+    private address: string;
+
+    constructor(name: string, age: number, address: string) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
+    getName(): string {
+        return this.name;
+    }
+
+    setName(name: string): void {
+        this.name = name;
+    }
+
+    getAge(): number {
+        return this.age;
+    }
+
+    setAge(age: number): void {
+        this.age = age;
+    }
+
+    getAddress(): string {
+        return this.address;
+    }
+
+    setAddress(address: string): void {
+        this.address = address;
+    }
+}
+
+const person1 = new Person("John Doe", 25, "123 Main St");
+console.log(person1.getName());
+console.log(person1.getAge());
+console.log(person1.getAddress());
+
+person1.setName("Jane Doe");
+person1.setAge(30);
+person1.setAddress("456 Elm St");
+console.log(person1.getName());
+console.log(person1.getAge());
+console.log(person1.getAddress());
+
+_______________________________________________________________________________________________________________________________________
+  4) PRICE CALCULATOR CLASS
+  
+class UberPriceCalculator {
+    private baseFare: number;
+    private perKilometerRate: number;
+
+    constructor(baseFare: number, perKilometerRate: number) {
+        this.baseFare = baseFare;
+        this.perKilometerRate = perKilometerRate;
+    }
+
+    calculatePrice(distanceInKm: number): number {
+        const fare = this.baseFare + this.perKilometerRate * distanceInKm;
+        return fare;
+    }
+}
+
+
+const uberCalculator = new UberPriceCalculator(50, 10); // Base fare: ₹50, Per kilometer rate: ₹10
+
+const distanceInKm = 10;
+
+const price = uberCalculator.calculatePrice(distanceInKm);
+console.log("Uber Price: ₹", price);
+
+
+

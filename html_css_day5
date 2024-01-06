@@ -1,0 +1,281 @@
+1) GITHUB WEB PAGE 
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Github-like Profile Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><img src="github_logo.png" width="50px" height="60px" style="border-radius:50%"></div>
+            <div class="nav-links">
+                <a href="#">Repositories</a>
+                <a href="#">Projects</a>
+                <a href="#">Packages</a>
+            </div>
+        </nav>
+        <div class="user-info">
+            <h1>Rath</h1>
+        </div>
+    </header>
+
+    <main>
+        <!-- Your main content (repositories, contributions, etc.) goes here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 GitHub, Inc.</p>
+    </footer>
+</body>
+</html>
+
+
+CSS
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #24292e;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .user-info {
+        margin-top: 10px;
+    }
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________
+
+2) SURVEY FORM WEB PAGE
+
+HTML 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Destinations</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Travel Destinations</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="destination1.html">Destination 1</a></li>
+            <li><a href="destination2.html">Destination 2</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Explore amazing travel destinations around the world.</p>
+        <img src="images/travel.jpg" alt="Travel Image">
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Travel Destinations</p>
+    </footer>
+</body>
+</html>
+
+DESTINATION 1 PAGE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Destination 1 - Paradise Island</title>
+</head>
+<body>
+    <header>
+        <h1>Destination 1 - Paradise Island</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destination2.html">Next Destination</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Discover the breathtaking beauty of Paradise Island.</p>
+        <img src="images/destination1.jpg" alt="Paradise Island">
+        <table>
+            <tr>
+                <th>Attraction</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Beaches</td>
+                <td>White sandy beaches and crystal-clear waters.</td>
+            </tr>
+            <tr>
+                <td>Activities</td>
+                <td>Snorkeling, scuba diving, and water sports.</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Paradise Island</p>
+    </footer>
+</body>
+</html>
+
+
+DESTINATION 2 PAGE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Destination 2 - Mountain Retreat</title>
+</head>
+<body>
+    <header>
+        <h1>Destination 2 - Mountain Retreat</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destination1.html">Previous Destination</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p>Experience the tranquility of a mountain retreat.</p>
+        <img src="images/destination2.jpg" alt="Mountain Retreat">
+        <table>
+            <tr>
+                <th>Attraction</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Scenery</td>
+                <td>Breathtaking mountain views and fresh air.</td>
+            </tr>
+            <tr>
+                <td>Activities</td>
+                <td>Hiking, nature walks, and bird watching.</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mountain Retreat</p>
+    </footer>
+</body>
+</html>
+
+CSS
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #24292e;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+
